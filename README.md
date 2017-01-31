@@ -1,30 +1,46 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
+# Magic Dreams Valley: a fastastical creature roleplay game
 
-### Purpose
-The Sinatra Skeleton:
+		Players create characters to use as subjects in stories in a world based on the coexistence of unicorns and dragons
 
-1. Provides a foundation for building challenges or creating a new Sinatra application.
-2. Demonstrates a reasonable set of practices around building Sinatra applications.
-3. Eases the transition to Rails for Dev Bootcamp students
+## Features
 
-### Quickstart
+### Users
+ - create a new username with an e-mail and password
+ - log in and log out
 
-1.  `bundle install`
-2.  `shotgun config.ru`
+### Characters
+- users create characters
+- characters have:
+	- name
+	- species
+	- gender
+	- age
+	- description
+	- backstory
+- users can have multiple characters
 
-As needed, create models & migrations with the `rake` tasks:
+### Places
+- each place has a name and a description
+- where stories are displayed
 
-```
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-```
+### Stories
+- created by users for a particular roleplay event in a particular place
+- they each contain various posts from the participating characters
+- They have a title and an author the user who created
 
-### Contributing
+### Posts
+	- associated with a user and a character
+	- character options are generated based on the user's characters
+	- they have content text
+	- each post is part of a single story
 
-We would love for you to help make the skeleton more awesome, There are three ways to contribute:
-
-1. Ask for a bug fix or enhancement!
-2. Submit a pull request for a bug fix or enhancement!
-3. Code review an open pull request!
-
-Be prepared to give and receive specific, actionable, and kind feedback!
+## Plan of Attack
+1. Get vertical slice for user functional, with log in and out
+2. Get character vertical slice
+	- make characters in seed file
+3. Show characters on user page
+4. Create places vertical slice
+5. Create stories vertical slice
+	- make stories display in a place
+6. Create posts vertical slice
+	- display posts in story
