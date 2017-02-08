@@ -2,6 +2,13 @@
 
 		Players create characters to use as subjects in stories in a world based on the coexistence of unicorns and dragons
 
+-----------------------------------------------------
+
+## Updates
+**2.8.17 :** We now have users! They can log in and out and everything.
+
+-----------------------------------------------------
+
 ## Features
 
 ### Users
@@ -29,18 +36,27 @@
 - They have a title and an author the user who created
 
 ### Posts
-	- associated with a user and a character
-	- character options are generated based on the user's characters
-	- they have content text
-	- each post is part of a single story
+- associated with a user and a character
+- character options are generated based on the user's characters
+- they have content text
+- each post is part of a single story
 
-## Plan of Attack
-1. Get vertical slice for user functional, with log in and out
-2. Get character vertical slice
+## Work Flow
+
+### Pending
+
+-  Get character vertical slice
 	- make characters in seed file
-3. Show characters on user page
-4. Create places vertical slice
-5. Create stories vertical slice
+
+### Future
+
+-  Show characters on user page
+-  Create places vertical slice
+-  Create stories vertical slice
 	- make stories display in a place
-6. Create posts vertical slice
+-  Create posts vertical slice
 	- display posts in story
+
+### Finished
+
+- Get vertical slice for user functional, with log in and out 
